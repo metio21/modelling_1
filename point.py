@@ -26,7 +26,7 @@ class Point:
         my_distance = self.distance_orig()
         other_distance = other.distance_orig()
         return my_distance > other_distance
-    def
+
 
 
 
