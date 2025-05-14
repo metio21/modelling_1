@@ -11,11 +11,14 @@ class AdvancedPoint(ColorPoint):
 
     @property
     def x(self):
-        return self._x # getter method
+        return self._x # getter method; retrieves the value of a protected attribute
+    #property allows us to change the use of a function, which needs to be called, into an attribute
+    #property can only have one parameter; self
 
     @x.setter
     def x(self, value):
-        self._x = value # "setter" method
+        self._x = value # "setter" method allows us to updates or modifies value of the attribute
+
 
     @property
     def y(self):
@@ -50,6 +53,7 @@ class AdvancedPoint(ColorPoint):
 AdvancedPoint.add_color("rojo")
 p = AdvancedPoint(1, 2, "rojo")
 print(p.x)
+#this is getting the attribute
 print(p)
 print(p.distance_orig())
 p2 = AdvancedPoint.from_tuple((3, 2))
